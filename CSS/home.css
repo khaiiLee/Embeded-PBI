@@ -54,7 +54,7 @@
     font-size: 1.1rem;
 }
 
-.sidebar-menu a.active {
+.sidebar-menu a:hover {
     background: #fff;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -190,6 +190,16 @@ main {
     border-radius: 2px;
 }
 
+.card-single:hover {
+    background: #1D976C;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93F9B9, #1D976C);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+
 .card-single div:last-child span {
     font-size: 3rem;
     color: var(--color-dark);
@@ -199,17 +209,17 @@ main {
     color: var(--text-grey);
 }
 
-.card-single:last-child {
+/* .card-single:last-child {
     background: #1D976C;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #93F9B9, #1D976C);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93F9B9, #1D976C);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
-.card-single:last-child h1,
+*/ .card-single:last-child h1,
 .card-single:last-child div:first-child span,
 .card-single:last-child div:last-child span {
     color: #fff;
@@ -326,7 +336,7 @@ td {
     color: green;
 }
 
-@media only screen and (max-width:1200px) {
+/* @media only screen and (max-width:1200px) {
     .sidebar {
         width: 70px;
     }
@@ -468,4 +478,4 @@ td {
     .card {
         grid-template-columns: 100%;
     }
-}
+} */
